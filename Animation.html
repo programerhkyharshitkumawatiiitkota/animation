@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            background-color: black;
+            height: 9  0vh;
+            width: 100vw;
+            
+        }
+        .box{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            animation-name: widthAnimation;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            -o-animation-direction: alternate-reverse;
+        }
+       .box img{
+        animation-name: widthAnimation;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            -o-animation-direction: alternate-reverse; 
+        }
+        .harsh h1{
+            animation-name: harshit;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            /* -o-animation-direction: alternate-reverse;  */
+        }
+        @keyframes widthAnimation {
+            from{
+                width: 300px;
+                height: 300px;
+            }
+            to{
+                width: 90vw;
+                height: 40vh;
+            }
+        }
+        @keyframes harshit {
+            from{
+                text-size-adjust: 12px;
+            }
+            to{
+                text-size-adjust: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <img src="hars.jpg" height="300px" width="300px">
+        </div>
+    </div>
+
+    <div class="harsh">
+        <h1>i am harshit kumawat</h1>
+    </div>
+</body>
+</html>
